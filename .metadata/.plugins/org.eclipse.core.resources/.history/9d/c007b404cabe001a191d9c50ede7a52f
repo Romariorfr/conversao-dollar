@@ -1,0 +1,13 @@
+package util;
+
+public class CurrencyConverter {
+	public static double dollarPrice;
+	public static final double IOF = 6;
+	
+	public static double conversionDollar(double real) {
+		double conversion = real * dollarPrice;
+		double tax = (6 /100) * conversion;
+		return conversion + tax;
+	}
+
+}
